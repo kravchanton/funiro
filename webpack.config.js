@@ -19,9 +19,9 @@ module.exports = {
         rules: [
             {
                 test: /\.(sa|sc|c)ss$/i,
-                use: [MiniCssExtractPlugin.loader,
+                use: [
+                    (mode = 'development' ? 'style-loader' : MiniCssExtractPlugin.loader),
                     "css-loader",
-                    "style-loader",
                     {
                         loader: "postcss-loader",
                         options: {
