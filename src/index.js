@@ -1,4 +1,5 @@
 import './scss/style.scss';
+import './js/files/script'
 import $ from 'jquery'
 
 const userStack = {

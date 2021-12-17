@@ -9,6 +9,9 @@ if (process.env.NODE_ENV === 'production') {
 console.log(mode + ' mode')
 
 module.exports = {
+    entry: {
+        app: './src/index.js',
+    },
     mode: mode,
     output: {
         filename: '[name].[contenthash].js',

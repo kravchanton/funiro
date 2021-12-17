@@ -6,8 +6,12 @@
 
 
 body{
+  background: #f9f1e7;
   font-family: Gilroy-Medium;
-  color: $mainColor
+  color: $mainColor;
+  &._lock {
+    overflow: hidden;
+  }
 
 }
 a {
