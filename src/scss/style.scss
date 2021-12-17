@@ -1,14 +1,46 @@
 @import "icons";
 @import 'fonts';
-
-
+@import 'header';
+@import "variables";
 //Шрифт по умолчанию
 
-$fontFamily: 'Gilroy-Medium';
-$fontSize: 16;
 
-
-
-html {
+body{
   font-family: Gilroy-Medium;
+  color: $mainColor
+
+}
+a {
+  text-decoration: none; /* Отменяем подчеркивание у ссылки */
+
+}
+button {
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  &._loaded {
+
+  }
+}
+
+.container {
+  max-width: $maxWidthContainer + px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+
 }
