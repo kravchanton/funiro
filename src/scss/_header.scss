@@ -243,7 +243,6 @@
   grid-auto-flow: column;
   align-items: center;
   grid-gap: 32px;
-
   &__item {
 
     &_favorites {
@@ -268,7 +267,7 @@
   &__icon {
     color: #262f56;
     font-size: 24px;
-    transition: color 0.3s ease 0s;
+    transition: color 0.4s ease 0s;
     position: relative;
     display: block;
     @media(any-hover: hover) {
